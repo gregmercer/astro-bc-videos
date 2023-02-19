@@ -1,3 +1,6 @@
+# Vercel deploy of the following Blue Collar Coder tutorial:
+https://www.youtube.com/watch?v=gi4c7fbeURc
+
 # Astro Starter Kit: Minimal
 
 ```
