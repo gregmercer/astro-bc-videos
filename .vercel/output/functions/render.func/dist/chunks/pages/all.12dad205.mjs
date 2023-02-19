@@ -187,7 +187,7 @@ const $$Astro = createAstro();
 const $$Search = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Search;
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Search" }, { "default": ($$result2) => renderTemplate`${renderComponent($$result2, "SearchPage", SearchPage, {})}` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Search" }, { "default": ($$result2) => renderTemplate`${renderComponent($$result2, "SearchPage", SearchPage, { "client:load": true, "client:component-hydration": "load", "client:component-path": "/Users/gmercer/Desktop/astro/astro-bc-videos/src/components/SearchPage", "client:component-export": "default" })}` })}`;
 }, "/Users/gmercer/Desktop/astro/astro-bc-videos/src/pages/search.astro");
 
 const $$file = "/Users/gmercer/Desktop/astro/astro-bc-videos/src/pages/search.astro";
