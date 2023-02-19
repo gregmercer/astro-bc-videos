@@ -11,7 +11,7 @@ export default function SearchPage() {
   const [videos, setVideos] = useState<VideoData[]>([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/search.json?q=${encodeURIComponent(search)}`)
+    fetch(`/search.json?q=${encodeURIComponent(search)}`)
       .then((res) => res.json())
       .then((data) => {
         setVideos(data);
